@@ -143,7 +143,7 @@ void loadQuestions(Category categories[], int *total_categories) {
     strcpy(categories[2].questions[idx].options[1], "B. Shivnarine Chanderpaul");
     strcpy(categories[2].questions[idx].options[2], "C. Clive Lloyd");
     strcpy(categories[2].questions[idx].options[3], "D. Lance Gibbs");
-    categories[2].questions[idx].correct_option = 'C';
+    categories[2].questions[idx].correct_option = 'B';
     categories[2].question_count++;
 
     idx = categories[2].question_count;
@@ -170,7 +170,7 @@ void loadQuestions(Category categories[], int *total_categories) {
     strcpy(categories[2].questions[idx].options[1], "B. Colin Boyce");
     strcpy(categories[2].questions[idx].options[2], "C. Aliann Pompey");
     strcpy(categories[2].questions[idx].options[3], "D. All of the above");
-    categories[2].questions[idx].correct_option = 'C';
+    categories[2].questions[idx].correct_option = 'D';
     categories[2].question_count++;
 
     // Culture 
@@ -236,7 +236,7 @@ void loadQuestions(Category categories[], int *total_categories) {
     categories[4].question_count++;
 
     idx = categories[4].question_count;
-    strcpy(categories[4].questions[idx].question_text, "Guyana is know for having the worls's largest single drop waterfall, what is its name?");
+    strcpy(categories[4].questions[idx].question_text, "Guyana is know for having the worlds's largest single drop waterfall, what is its name?");
     strcpy(categories[4].questions[idx].options[0], "A. Niagara Falls");
     strcpy(categories[4].questions[idx].options[1], "B. Kaieteur Falls");
     strcpy(categories[4].questions[idx].options[2], "C. Angel Falls");
@@ -245,7 +245,7 @@ void loadQuestions(Category categories[], int *total_categories) {
     categories[4].question_count++;
 
     idx = categories[4].question_count;
-    strcpy(categories[4].questions[idx].question_text, "Their lurks a very big snake in Guyana's Rainforest, what is it");
+    strcpy(categories[4].questions[idx].question_text, "There lurks a very big snake in Guyana's Rainforest, what is it");
     strcpy(categories[4].questions[idx].options[0], "A. Python");
     strcpy(categories[4].questions[idx].options[1], "B. Pit Viper");
     strcpy(categories[4].questions[idx].options[2], "C. Green Anaconda");
