@@ -6,3 +6,12 @@
 
 typedef struct {
   char player_name[MAX_NAME_LEN];
+  int score;
+} ScoreEntry;
+
+void initScores(void); // Ensures the file exists
+void saveScore(const char *name, int score);
+void showLeaderboard(void);
+void showPlayerHistory(const char *name);
+
+#endif
