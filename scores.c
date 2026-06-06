@@ -37,10 +37,12 @@ void showLeaderboard(void) {
 
     sortScores(entries, count);
 
+	printf("=====================================================\n");
     printf("\n  --- TOP 5 LEADERBOARD ---\n");
     for (int i = 0; i < count && i < 5; i++) {
         printf("  %d. %-15s : %d\n", i + 1, entries[i].player_name, entries[i].score);
     }
+	printf("=====================================================\n");
 }
 
 void showPlayerHistory(const char *name) {
@@ -49,12 +51,14 @@ void showPlayerHistory(const char *name) {
 
 	char current_name[MAX_NAME_LEN];
 	int score;
+	printf("=====================================================\n");
 	printf("\n --- History for %s ---\n", name);
 	while (fscanf(f, "%s %d", current_name, &score) == 2) {
 		if (strcmp(current_name, name) == 0) {
 			printf("  Score: %d\n", score);
 		}
 	}
+	printf("=====================================================\n");
 	fclose(f);
 }
 	
